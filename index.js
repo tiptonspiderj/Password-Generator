@@ -23,12 +23,20 @@ function password(textValue, passwordLength) {
    return textValue
 }
 
-function copyPassword1(){
+function copyPassword(copiedPassword){
   // Select the text field
-  password1.select();
-  password1.setSelectionRange(0, 99999); // For mobile devices
+  copiedPassword.select();
+  copiedPassword.setSelectionRange(0, 99999); // For mobile devices
    // Copy the text inside the text field
-  navigator.clipboard.writeText(password1.value);
+  navigator.clipboard.writeText(copiedPassword.value);
   // Alert the copied text
-  alert("Copied the text: " + password1.value);
+  alert("Copied the text: " + copiedPassword.value);
+}
+
+function copyPassword1(){
+  copyPassword(password1)
+}
+
+function copyPassword2(){
+  copyPassword(password2)
 }
