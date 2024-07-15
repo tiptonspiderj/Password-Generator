@@ -1,0 +1,65 @@
+body {
+    background: #1F2937; 
+    
+     
+}
+.container {
+    padding-left: 30px;
+    max-width: 550px;
+    max-height: 550px; 
+    background: #1F2937; 
+    display: block;
+    color: white;
+    font-family: "Karla", sans-serif;  
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-weight: 800px; 
+    line-height: 30px;   
+}
+
+h4 {
+    color: #D5D4D8;
+    margin-top: 0px;
+    margin-bottom: 45px;
+}
+
+p{
+    border-bottom: 1px solid #2F3E53;
+    margin-top: 35px;
+    margin-bottom: 0px;
+    width: 450px;
+}
+
+#green-text{
+    color: #10B981;
+
+}
+
+#generatePasswords-btn {
+    font-size: 16px;
+    width: 190px;
+    height: 42px;
+    border: none;
+    border-radius: 6px;
+    margin-right: 15px;
+    background-color: #10B981;
+    color: white;
+}
+
+#randomPassword1, #randomPassword2 {
+    background: #273549;
+    height: 40px;
+    width: 175px;
+    border-radius: 6px;
+    border: none;
+    color: #55F991;
+    margin-right: 25px;
+    margin-top: 35px;
+    padding-left: 30px;
+    font-size: 16px;
+    font-weight: 500;
+   
+}
+
