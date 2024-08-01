@@ -60,15 +60,15 @@ function copyPassword(copiedPassword){
 function fade(element) {
     var op = 1;  // initial opacity
     var timer = setInterval(function () {
-        if (op < 0.55){
+        if (op < 0.4){
             clearInterval(timer)
             element.style.display = 'none'
         }
-        if (op >= 0.55) {
+        if (op >= 0.5) {
           element.style.opacity = 1
         }
         element.style.opacity = op
         element.style.filter = 'alpha(opacity=' + op * 100 + ")"
         op -= op * 0.05
-    }, 125);
+    }, 110);
 }
