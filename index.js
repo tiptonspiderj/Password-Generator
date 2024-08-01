@@ -7,6 +7,7 @@ const password1 = document.getElementById("randomPassword1")
 const password2 = document.getElementById("randomPassword2")
 const container = document.getElementsByClassName('container')
 const length = document.getElementById("passwordLength")
+const modal = document.getElementById('modal')
 
 let passwordLength = 12
 let passwordText = ""
@@ -22,9 +23,13 @@ container[0].addEventListener('click', function(e) {
     return
   } else if (e.target.id === 'copyPassword1-btn') {
     copyPassword(password1)
+    modal.children[0].innerText = 'Password 1 copied'
+    fade(modal)
     return
   } else if(e.target.id === 'copyPassword2-btn') {
     copyPassword(password2)
+    modal.children[0].innerText = 'Password 2 copied'
+    fade(modal)
   }
 })
 
@@ -49,4 +54,21 @@ function copyPassword(copiedPassword){
   copiedPassword.setSelectionRange(0, 99999); // For mobile devices
    // Copy the text inside the text field
   navigator.clipboard.writeText(copiedPassword.value);
+  modal.style.display = 'inline'
+}
+
+function fade(element) {
+    var op = 1;  // initial opacity
+    var timer = setInterval(function () {
+        if (op < 0.55){
+            clearInterval(timer)
+            element.style.display = 'none'
+        }
+        if (op >= 0.55) {
+          element.style.opacity = 1
+        }
+        element.style.opacity = op
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")"
+        op -= op * 0.05
+    }, 125);
 }
