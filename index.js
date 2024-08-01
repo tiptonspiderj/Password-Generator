@@ -8,7 +8,7 @@ const password2 = document.getElementById("randomPassword2")
 const container = document.getElementsByClassName('container')
 const length = document.getElementById("passwordLength")
 
-let passwordLength = 16
+let passwordLength = 12
 let passwordText = ""
 
 length.addEventListener('input', function(){
