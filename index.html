@@ -9,12 +9,15 @@
         <div class="container">
             <h1>Generate a <br><span id="green-text">random password</span></h1>
             <h4>Never use an insecure password again.</h4>
-            <button id="generatePasswords-btn" onclick="generatePasswords()">Generate passwords</button>
+
+            <button id="generatePasswords-btn">Generate passwords</button>
             <p></P>
             <input type="text" id="randomPassword1">
             <input type="text" id="randomPassword2">
-            <button id="copyPassword1-btn" onclick="copyPassword1()">Copy password 1</button>
-            <button id="copyPassword2-btn" onclick="copyPassword2()">Copy password 2</button>
+            <div class="btnContainer">
+              <button id="copyPassword1-btn">Copy password 1</button>
+              <button id="copyPassword2-btn">Copy password 2</button>
+            </div>
             <script src="index.js"></script>
         </div>
     </body>
