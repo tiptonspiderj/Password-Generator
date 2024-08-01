@@ -7,7 +7,7 @@ body {
 .container {
   padding-top: 20px;
   padding-left: 20px;
-  max-width: 500px;
+  width: 500px;  
   background: #1F2937;
   display: block;
   margin: 0 auto;
@@ -52,12 +52,10 @@ button {
   margin-top: 35px;
 
 }
-.btnContainer{
-  padding: 0;
+
+.subContainer{
   display: flex;
   justify-content: space-between;
-  gap: 25px;
-  padding-right: 40px;
 }
 
 #green-text{
@@ -73,7 +71,6 @@ button {
   border: none;
   color: #55F991;
   margin-top: 35px;
-  margin-right: 25px;
   padding-left: 10px;
   padding-right: 10px;
   font-size: 16px;
