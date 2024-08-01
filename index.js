@@ -8,6 +8,8 @@ const password2 = document.getElementById("randomPassword2")
 const container = document.getElementsByClassName('container')
 const length = document.getElementById("passwordLength")
 const modal = document.getElementById('modal')
+const password1CopyBtn = document.getElementById('copyPassword1-btn')
+const password2CopyBtn = document.getElementById('copyPassword2-btn')
 
 let passwordLength = 12
 let passwordText = ""
@@ -24,11 +26,15 @@ container[0].addEventListener('click', function(e) {
   } else if (e.target.id === 'copyPassword1-btn') {
     copyPassword(password1)
     modal.children[0].innerText = 'Password 1 copied'
+    password1CopyBtn.disabled = true;
+    password2CopyBtn.disabled = true;
     fade(modal)
     return
   } else if(e.target.id === 'copyPassword2-btn') {
     copyPassword(password2)
     modal.children[0].innerText = 'Password 2 copied'
+    password1CopyBtn.disabled = true;
+    password2CopyBtn.disabled = true;
     fade(modal)
   }
 })
@@ -63,6 +69,8 @@ function fade(element) {
         if (op < 0.4){
             clearInterval(timer)
             element.style.display = 'none'
+            password1CopyBtn.disabled = false;
+            password2CopyBtn.disabled = false;
         }
         if (op >= 0.5) {
           element.style.opacity = 1
@@ -71,4 +79,5 @@ function fade(element) {
         element.style.filter = 'alpha(opacity=' + op * 100 + ")"
         op -= op * 0.05
     }, 110);
+
 }
