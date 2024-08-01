@@ -2,13 +2,19 @@ const characters =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","
 "Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",
  "0", "1", "2", "3", "4", "5", "6", "7", "8", "9","~","`","!","@","#","$","%","^","&","*","(",")","_","-","+",
  "=","{","[","}","]",",","|",":",";","<",">",".","?","/"];
- 
+
 const password1 = document.getElementById("randomPassword1")
 const password2 = document.getElementById("randomPassword2")
 const container = document.getElementsByClassName('container')
+const length = document.getElementById("passwordLength")
 
-let passwordLength = 15
+let passwordLength = 16
 let passwordText = ""
+
+length.addEventListener('input', function(){
+  document.getElementById('passwordInfo').textContent = 'Password length (8-16): ' + length.value
+  passwordLength = length.value
+})
 
 container[0].addEventListener('click', function(e) {
   if (e.target.id === 'generatePasswords-btn') {
