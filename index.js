@@ -60,24 +60,24 @@ function copyPassword(copiedPassword){
   copiedPassword.setSelectionRange(0, 99999); // For mobile devices
    // Copy the text inside the text field
   navigator.clipboard.writeText(copiedPassword.value);
-  modal.style.display = 'inline'
+  modal.style.display = 'flex'
 }
 
 function fade(element) {
     var op = 1;  // initial opacity
     var timer = setInterval(function () {
-        if (op < 0.4){
+      if (op >= 0.5) {
+        element.style.opacity = 1
+      }
+        if (op < 0.5){
             clearInterval(timer)
             element.style.display = 'none'
             password1CopyBtn.disabled = false;
             password2CopyBtn.disabled = false;
         }
-        if (op >= 0.5) {
-          element.style.opacity = 1
-        }
         element.style.opacity = op
         element.style.filter = 'alpha(opacity=' + op * 100 + ")"
-        op -= op * 0.05
-    }, 110);
+        op -= op * 0.025
+    }, 50);
 
 }
