@@ -31,7 +31,7 @@ p {
   border-bottom: 1px solid #2F3E53;
   margin-top: 35px;
   margin-bottom: 0px;
-  width: 450px;
+  width: 440px;
 }
 
 input:focus {
@@ -40,6 +40,7 @@ input:focus {
 
 button {
   margin-top: 35px;
+  margin-right: 10px;
   font-size: 1em;
   width: 190px;
   height: 42px;
@@ -72,6 +73,7 @@ button {
   border: none;
   color: #55F991;
   margin-top: 35px;
+  margin-right: 10px;
   padding-left: 10px;
   padding-right: 10px;
   font-size: 1em;
