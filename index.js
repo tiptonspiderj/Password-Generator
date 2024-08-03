@@ -1,7 +1,16 @@
-const characters =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X",
+const allCharacters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X",
 "Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",
  "0", "1", "2", "3", "4", "5", "6", "7", "8", "9","~","`","!","@","#","$","%","^","&","*","(",")","_","-","+",
  "=","{","[","}","]",",","|",":",";","<",">",".","?","/"];
+
+ const numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+
+ const letters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X",
+ "Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+
+ const numbersAndLetters= ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X",
+ "Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",
+  "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
 const password1 = document.getElementById("randomPassword1")
 const password2 = document.getElementById("randomPassword2")
@@ -10,6 +19,7 @@ const length = document.getElementById("passwordLength")
 const modal = document.getElementById('modal')
 const password1CopyBtn = document.getElementById('copyPassword1-btn')
 const password2CopyBtn = document.getElementById('copyPassword2-btn')
+const radioButtons = document.querySelectorAll('input[name="passwordType"]');
 
 let passwordLength = 12
 let passwordText = ""
@@ -40,18 +50,38 @@ container[0].addEventListener('click', function(e) {
 })
 
 function generatePasswords() {
-    password1.value = password(passwordText, passwordLength)
+    password1.value = password(passwordText, passwordLength, getSelectedRadioBtn())
     passwordText = ""
-    password2.value = password(passwordText, passwordLength)
+    password2.value = password(passwordText, passwordLength, getSelectedRadioBtn())
     passwordText = ""
 }
 
-function password(textValue, passwordLength) {
+function password(textValue, passwordLength, passwordArray) {
     for (let i = 0; i < passwordLength; i++) {
-        let tempIndex = Math.floor(Math.random() * characters.length)
-        textValue+= characters[tempIndex]
+        let tempIndex = Math.floor(Math.random() * passwordArray.length)
+        textValue+= passwordArray[tempIndex]
    }
    return textValue
+}
+
+function getSelectedRadioBtn() {
+    let selectedPattern = ''
+    for (const radioButton of radioButtons){
+      if (radioButton.checked) {
+        selectedPattern = radioButton.value;
+        break;
+      }
+    }
+
+    if(selectedPattern === "numbers"){
+      return numbers
+    } else if (selectedPattern === "letters"){
+      return letters
+    }else if(selectedPattern === "lettersAndNumbers") {
+      return numbersAndLetters
+    }else {
+      return allCharacters
+    }
 }
 
 function copyPassword(copiedPassword){
@@ -80,4 +110,4 @@ function fade(element) {
         op -= op * 0.025
     }, 50);
 
-}
+  }

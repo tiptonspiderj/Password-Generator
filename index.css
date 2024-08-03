@@ -1,12 +1,10 @@
 body {
   background: #1F2937;
   margin: 0;
-  padding: 0;
 }
 
 .container {
-  padding-top: 20px;
-  padding-left: 20px;
+  padding: 20px;
   max-width: 450px;
   background: #1F2937;
   display: block;
@@ -18,7 +16,8 @@ body {
 h1 {
   margin-bottom: 10px;
   font-weight: 800px;
-  line-height: 30px;
+  line-height: 1;
+  font-size: 2.5rem;
 }
 
 h4 {
@@ -40,7 +39,6 @@ input:focus {
 
 button {
   margin-top: 35px;
-  margin-right: 10px;
   font-size: 1em;
   width: 190px;
   height: 42px;
@@ -50,19 +48,12 @@ button {
   color: white;
 }
 
-#copyPassword1-btn, #copyPassword2-btn {
-  margin-top: 35px;
-
-}
-
-.subContainer{
-  display: flex;
-  justify-content: space-between;
+label{
+    display: block;
 }
 
 #green-text{
   color: #10B981;
-
 }
 
 #randomPassword1, #randomPassword2 {
@@ -72,11 +63,11 @@ button {
   border-radius: 6px;
   border: none;
   color: #55F991;
-  margin-top: 35px;
+  margin-top: 10px;
   margin-right: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 500;
   text-align: center;
 }
@@ -92,6 +83,7 @@ button {
 
 label{
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .modal {
@@ -112,4 +104,32 @@ label{
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+.radioGroup input {
+  accent-color: #10B981;
+}
+
+.subcontainer {
+  display: inline-block;
+}
+
+.subContainer label{
+  display: block;
+  text-align: center;
+}
+
+.subContainer1{
+  display: flex;
+  justify-content: space-between;
+  width: 440px;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subContainer2{
+  display: flex;
+  justify-content: center;
 }
