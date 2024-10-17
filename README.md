@@ -1,10 +1,9 @@
-# Dice Game
-This is a kid's game to be played with yourself online.  If you need to waste a few minutes, this game is for you.
+# Password Generator
+This application will provide two random passwords per your specifications.  
 
 ## Description
 
-This project was made using Visual Code for the IDE along with React and Webpack for compiling the code. When you click the "Roll" button, a timer starts and you have 30 seconds to make all ten die the same number.  You click or select the die you wish to keep and they will turn green. If all ten dice are green and the same number under 30 seconds, you win the game.  Otherwise, you will get a notification that you have lost the game as a loser.
-
+If you don't trust big company's to provide unique random passowrds, then this is the program for you.  If you combine this with my Passman application built in Java, then you will never forget a password again.  Your accounts will never be hacked.  This program makes creating a unique, random password effortless.
 
 ## Getting Started
 
