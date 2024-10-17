@@ -9,7 +9,7 @@ If you don't trust big company's to provide unique random passowrds, then this i
 
 Click on the image below to see the live website.
 
-[![application images](https://github.com/tiptonspiderj/Dice-Game/blob/main/images/Screenshot.png)](https://tiptonspiderj1-dice-game.netlify.app/)
+[![application images](https://github.com/tiptonspiderj/Password-Generator/blob/main/images/Screenshot.png)](https://tiptonspiderj1-dice-game.netlify.app/)
 
 ### Installing for Windows
 
