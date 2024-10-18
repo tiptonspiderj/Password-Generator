@@ -23,9 +23,9 @@ None
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Background Color | ![#1f2937](https://via.placeholder.com/10/1f2937) #1f2937 |
-| Text Color | ![#d7d7d7](https://via.placeholder.com/10/d7d7d7) #d7d7d7 |
-| Textfield Color | ![#273549](https://via.placeholder.com/10/273549) #273549 |
+| Background Color | ![#1f2937](https://imageplaceholder.net/10x10/1f2937) #1f2937 |
+| Text Color | ![#d7d7d7](https://imageplaceholder.net/10x10/d7d7d7) #d7d7d7 |
+| Textfield Color | ![#273549](https://imageplaceholder.net/10x10/273549) #273549 |
 | Button Color | ![#10b981](https://imageplaceholder.net/10x10/10b981) #10b981 |
 
 
