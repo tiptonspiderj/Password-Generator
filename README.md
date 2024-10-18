@@ -13,22 +13,11 @@ Click on the image below to see the live website.
 
 ### Installing for Windows
 
-You can make a clone of this repository and then extract all of the files into one folder.  From there, open up the folder with Visual Studio Code.  You will need the live server plugin in Visual Studio Code.  You should be able to google how to enable live server in Visual Studio Code.  You will also have to ensure you have NPM installed onto your local machine first and run the following commands in your terminal within Visual Studio Code: 
-```
-npm install
-npm run build
-```
-or combine the terminal commands like 
-```
-npm install && npm run build
-```
-
-"npm install"  should create an additional folder within your project in Visual Studio Code.
-If you don't know whether or not NPM is installed on your computer, type "npm -v" into your command terminal first.  It should return a version number if it is installed.  
+You can make a clone of this repository and then extract all of the files into one folder.  From there, simply click on the "index.html" file and open it with your favorite web browser. 
 
 ### Dependencies
 
-The dependencies are React and the Webpack compiler.  I also used Visual Studio Code to make the project from scratch.  Visual Studio Code makes running this code really easy if you enable the "Live Server" extension.  If you have quesitons about that, you can find sources on how to enable the extension on YouTube.  Third party libraries used in the project are "nanoid" for creating keys when mapping over arrays and "react-confetti" for displaying a bonus animated graphic when you win the game.
+None
 
 ## Color Reference
 
