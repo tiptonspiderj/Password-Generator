@@ -23,7 +23,7 @@ None
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Background Color | ![#1F2937](https://via.placeholder.com/10/1f2937?text=+) #1f2937 |
+| Background Color | ![#1f2937](https://via.placeholder.com/10/1f2937?text=+) #1f2937 |
 | Card Background Color | ![#f5f5f5](https://via.placeholder.com/10/f5f5f5?text) #f5f5f5 |
 | Dice Color | ![#d7d7d7](https://via.placeholder.com/10/d7d7d7=+) #d7d7d7 |
 | Selected Dice Color | ![#59e391](https://via.placeholder.com/10/59e391=+) #59e391 |
