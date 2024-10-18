@@ -24,10 +24,9 @@ None
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
 | Background Color | ![#1f2937](https://via.placeholder.com/10/1f2937?text=+) #1f2937 |
-| Card Background Color | ![#f5f5f5](https://via.placeholder.com/10/f5f5f5?text) #f5f5f5 |
 | Dice Color | ![#d7d7d7](https://via.placeholder.com/10/d7d7d7=+) #d7d7d7 |
 | Selected Dice Color | ![#59e391](https://via.placeholder.com/10/59e391=+) #59e391 |
-| Button Color | ![#5035ff](https://via.placeholder.com/10/5035ff?text=+) #5035ff |
+| Button Color | ![#10b981](https://via.placeholder.com/10/#10b981?text=+) #10b981 |
 
 
 ## Authors
