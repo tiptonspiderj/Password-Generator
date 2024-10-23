@@ -3,7 +3,7 @@ This application will provide two random passwords per your specifications.
 
 ## Description
 
-If you don't trust big company's to provide unique random passowrds, then this is the program for you.  If you combine this with my Passman application built in Java, then you will never forget a password again.  Your accounts will never be hacked.  This program makes creating a unique, random password effortless.
+If you don't trust big companies to provide unique random passwords, then this is the program for you.  If you combine this with my Passman application built in Java, then you will never forget a password again.  Your accounts will never be hacked.  This program makes creating a unique, random password effortless.
 
 ## Getting Started
 
